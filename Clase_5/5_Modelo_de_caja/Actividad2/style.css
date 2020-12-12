@@ -1,0 +1,18 @@
+body {
+  background-color: black;
+}
+
+.boxtop {
+  background-color: limegreen;
+}
+
+.boxtop.box1 {
+  display: inline-block;
+}
+img {
+  width: 150px;
+}
+
+div {
+  display: inline;
+}

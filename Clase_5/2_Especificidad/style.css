@@ -1,0 +1,95 @@
+/* 
+1. Especificidad
+
+    General
+    -------------------
+        ------------
+            ------
+                --
+            Especifico
+*/
+
+/* 
+Cuando el navegador detecta que existen varios estilos apuntando al mismo elemento, el navegadro se empieza a preguntar cual de todos estos estilos es el mas especifico y cual es mas general (que apunta varios elementos)
+*/
+
+/* Segun esos calculos, el navegador resuelve la especificidad a traves de unas formulas matematicas para determinar cual estilo aplicar
+ */
+
+h1 {
+  color: red;
+}
+
+.title {
+  color: green;
+}
+
+#title {
+  color: blue;
+}
+
+h1.title {
+  color: yellow;
+}
+
+h1#title {
+  color: purple;
+}
+
+h1#title.title {
+  color: steelblue;
+}
+
+body > h1#title.title {
+  color: teal;
+}
+
+/* Pues por logica, el navegadoraplicaria cascada */
+
+/* Como el navegador determina la especificidad:
+
+Etiquetas y pseudoelementos:            1
+Clases, atributos y pseudoclases:      10
+ID:                                   100
+Estilos de linea:                    1000 
+*/
+
+h1 {
+  color: red;
+}
+/* 1 */
+
+.title {
+  color: green;
+}
+/* 10 */
+
+h1.title {
+  color: yellow;
+}
+/* 11 */
+
+#title {
+  color: blue;
+}
+/* 100 */
+
+h1#title {
+  color: purple;
+}
+/* 101 */
+
+h1#title.title {
+  color: steelblue;
+}
+/* 111 */
+
+body > h1#title.title {
+  color: teal;
+}
+
+/* 112 */
+
+/* PRO TIP:
+    Mantener la especificidad SIEMPRE de menor a mayor
+    */

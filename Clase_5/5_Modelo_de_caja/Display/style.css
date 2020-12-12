@@ -1,0 +1,57 @@
+h1 {
+  background-color: yellow;
+  width: 200px;
+  height: 100px;
+}
+p {
+  background-color: pink;
+}
+
+span {
+  background-color: blueviolet;
+  color: lightblue;
+}
+
+img {
+  width: 200px;
+}
+
+/* Propiedad Display */
+
+/* Es la propiedad CSS que determina el comportamiento de mi elemento HTML en el Layout (Geometria) 
+  Linea
+  Bloque
+  LineaYBloque
+  Nada
+
+  *Propiedades:
+
+  block
+  inline
+  inline-block
+  none
+  * flex
+  * grid
+
+*/
+
+span {
+  display: block;
+}
+
+p {
+  display: inline;
+  height: 500px;
+}
+
+p {
+  display: inline-block;
+  height: 50px;
+  width: 120px;
+}
+
+.galeria {
+  display: none;
+  /*   visibility: hidden;
+ */
+}

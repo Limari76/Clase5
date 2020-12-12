@@ -1,0 +1,41 @@
+.box {
+  width: 200px;
+  height: 100px;
+  background-color: lightcoral;
+  /*   float: left;*/
+  /*   margin-top: 20px;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+ */
+  /* Abreviaciones */
+
+  margin: 20px 30px 60px 50px;
+}
+
+/* Margin:
+
+Define separaciones externas de un elemento 
+
+!Area protegida
+
+*Ningun elemento puede acercarse mas del valor establecido
+*/
+/* Trucos con los margenes */
+
+/* 1. Centrado con Margenes */
+.box {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 2. Centrado de imagenes */
+img {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  /* No funciona */
+  display: inline-block;
+  /* tampoco, porque los inline block tien width, tiene height pero son elementos en line*/
+  display: block;
+}

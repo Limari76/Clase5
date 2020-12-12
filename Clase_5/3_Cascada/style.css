@@ -1,0 +1,47 @@
+/* Si ya bien sabemos qué es la cascada
+
+(Cascada significa que los estilos que vienen despues, sobreescriben a los anteriores)
+*/
+
+h1 {
+  color: red;
+}
+/* 1 */
+
+.title {
+  color: green;
+}
+/* 10 */
+
+h1.title {
+  color: yellow !important;
+}
+/* 11 */
+
+#title {
+  color: blue;
+}
+/* 100 */
+
+h1#title {
+  color: purple;
+}
+/* 101 */
+
+h1#title.title {
+  color: steelblue;
+}
+/* 111 */
+
+body > h1#title.title {
+  color: teal;
+}
+/* 112 */
+
+h1 {
+  color: darkorange;
+}
+
+/* Lo mas especifico sin llegar a important (17) son los estilos en linea, los estilos en linea NO SE PUEDEN SOBREESCRIBIR desde un elemento externo porque son tan especificos que estan en el mismo HTML, por eso no es muy buena idea utilizarlos, pero lo que si podria ganarle es el important */
+
+/* !important se usa solo en casos extremos*/

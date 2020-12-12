@@ -1,0 +1,32 @@
+/* Uno de los mas grandes amigos de diseñador y programador es el inspector de elementos, el inspector del navegador nos brinda informacion muy valiosa de lo que pasa con nuetsro codigo CSS*/
+
+/* Ctrl + Shift + i para abrir el inspector en el navegador */
+
+/* !COMPUTED
+
+Muestra lo que el navegador procesó
+
+Pestaña Style es el INPUT, es la entrada de datos al navegador (Tengo un CSS con tales propiedades) y me devuelve un OUTPUT (Pestaña Computed)
+
+Esta pestaña permite el usuario comprender porque le navegador hizo ciertas cosas.
+*/
+
+h1 {
+  color: red;
+}
+
+.title {
+  color: magenta;
+}
+
+.title {
+  color: blue;
+}
+
+h1 {
+  color: purple !important ;
+}
+
+#title {
+  color: steelblue;
+}

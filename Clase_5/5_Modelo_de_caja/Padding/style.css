@@ -1,0 +1,15 @@
+.contenido {
+  width: 50%;
+  color: white;
+  background-color: darkgray;
+  padding: 5%;
+}
+
+h1 {
+  background-color: darkkhaki;
+  text-align: center;
+}
+
+p {
+  color: darkgreen;
+}

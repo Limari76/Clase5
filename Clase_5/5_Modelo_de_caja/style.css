@@ -1,0 +1,40 @@
+/* 
+! 2 tipos de bloques
+1. Bloque
+    * Ocupan todo el espacion horizontal disponible
+    * Crean una linea nueva
+    * Tienen un ancho (width) y un alto (height)
+
+2. Inline
+    * Ocupan solo el espacio necesario para su contenido
+    * Son practicamente los elementos de texto:
+    <a>
+    <input>
+    <span>
+    <img>
+    *No tienen dimensiones (no puedo poner height o width)
+    !A excepcion de las imagenes
+*/
+
+h1 {
+  background-color: yellow;
+  width: 200px;
+  height: 100px;
+}
+/* Unidades
+    px (un punto en la pantalla
+    em (% de la fuente del elemento)
+    rem (% de la fuente del body)
+    */
+p {
+  background-color: pink;
+}
+
+span {
+  background-color: blueviolet;
+  color: lightblue;
+}
+
+img {
+  width: 200px;
+}
